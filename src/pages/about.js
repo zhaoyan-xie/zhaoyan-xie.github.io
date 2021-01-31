@@ -40,35 +40,20 @@ export default ({ data }) => {
           alt={author}
         />
         <article className="w-75 m-auto pt-2 text-justify">
-          <p className="text-center">
+          {/* <p className="text-center">
             {designations.map((attr, i) => (
               <span key={attr}>
                 &nbsp;<b>{attr}</b>&nbsp;
                 {i < designations.length - 1 && <>||</>}
               </span>
             ))}
-          </p>
+          </p> */}
           <p className="i-5 mt-4 pt-2">
-            Hello there! My name is <b>{`${author}`}</b>. I am a&nbsp;
-            <a
-              href="https://www.dictionary.com/e/fictional-characters/padawan/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              padawan
-            </a>
-            &nbsp;
-            <b>{occupation}</b> discovering the ways of the code. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.
+            Hello there! My name is <b>{`${author}`}</b>. I am a <b>{occupation}</b> specialising
+						in React, React Native, NodeJS, Koa, ExpressJS, and MySQL.
           </p>
           <p className="i-5">
-            In my spare time, Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.
+            In my spare time, I dabble in WordPress.
           </p>
           <p className="i-5">
             Check out my <Link to="/projects">projects</Link> to see what I've
@@ -98,7 +83,7 @@ export default ({ data }) => {
             </>
           )}
           <hr />
-          <h5 className="watch-list-title pt-4">
+          {/* <h5 className="watch-list-title pt-4">
             Here are a couple of books from my reading list:
           </h5>
           <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
@@ -111,7 +96,7 @@ export default ({ data }) => {
           </h5>
           <p>
             <i>...waaaay too many to list.</i>
-          </p>
+          </p> */}
         </article>
       </Container>
     </PageLayout>

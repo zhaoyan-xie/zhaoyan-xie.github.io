@@ -11,7 +11,7 @@ export default () => {
     <Navbar variant={toString()} fixed="top" collapseOnSelect expand="md">
       <Navbar.Brand className="pl-5 ml-5" as={Link} to="/">
         <FontAwesomeIcon
-          icon={["fab", `${dark ? "empire" : "rebel"}`]}
+          icon={["fa", "home"]}
           className={`brand-icon ${dark ? "empire" : "rebel"}`}
           title="Home"
         />
@@ -31,10 +31,10 @@ export default () => {
           <Nav.Link className="ml-2" as={Link} to="/projects" title="Projects">
             Projects
           </Nav.Link>
-          <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
+          {/* <Nav.Link className="ml-2" as={Link} to="/resume" title="Resume">
             Resume
-          </Nav.Link>
-          <Form className="ml-3 my-auto">
+          </Nav.Link> */}
+          {/* <Form className="ml-3 my-auto">
             <Form.Check
               type="switch"
               id="custom-switch"
@@ -43,7 +43,7 @@ export default () => {
               checked={dark}
               onChange={toggleDark}
             />
-          </Form>
+          </Form>*/}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
